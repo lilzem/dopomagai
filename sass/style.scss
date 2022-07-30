@@ -1,0 +1,211 @@
+@import url(//db.onlinewebfonts.com/c/a44207bfe4040f536c824dbbf82f5ed1?family=e-Ukraine);
+@font-face {
+    font-family: "e-Ukraine";
+    src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot");
+    src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff") format("woff"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.svg#e-Ukraine") format("svg");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "e-Ukraine";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+}
+
+.button {
+    font-family: "e-Ukraine";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    padding: 12px 32px;
+    background: #000000;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    &:hover {
+        background: linear-gradient(68.94deg, #C3AAB2 -4.77%, #99EECC 46.72%, #80C0C8 90.23%, #4B8BFA 134.46%);
+        border-radius: 100px;
+        color: #000000;
+    }
+    &-inverted {
+        font-family: "e-Ukraine";
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000;
+        padding: 12px 32px;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 40px;
+        cursor: pointer;
+        transition: 0.3s linear;
+        &:hover {
+            border-image-slice: 1;
+            border: 2px black solid;
+            border-image: linear-gradient(87.99deg, #C3AAB2 0.66%, #99EECC 57.2%, #80C0C8 75.87%, #4B8BFA 98.72%) 10% round;
+            border-radius: 100px;
+        }
+    }
+}
+
+header {
+    position: relative;
+    max-height: 768px;
+    .img {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        z-index: -1;
+    }
+    .nav {
+        z-index: 1;
+        &__container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 60px;
+        }
+        &__categories {
+            display: flex;
+            align-items: center;
+            &-item {
+                margin-left: 36px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #000000;
+            }
+            &-button {
+                margin-left: 55px;
+            }
+        }
+    }
+    .info {
+        padding: 40px 0 180px 0;
+        &__container {
+            max-width: 730px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &-paragraph {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 24px;
+            width: 606px;
+            padding: 0 62px;
+        }
+        &-title {
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 110%;
+            text-align: center;
+        }
+        &__button__group {
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                margin-left: 29px;
+            }
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            &-item {
+                margin-left: 29px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        &-callus {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: #000000;
+            opacity: 0.5;
+            width: 433px;
+            margin-top: 24px;
+            padding: 0 146px;
+        }
+    }
+}
+
+.content {
+    .proposition {
+        &-item {
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 110%;
+            padding: 0px 60px;
+        }
+        &-desc {
+            font-size: 14px;
+            line-height: 140%;
+            color: #808080;
+            padding: 0px 60px;
+            width: 655px;
+            margin-top: 20px;
+        }
+        &__container {
+            margin-top: 85px;
+        }
+        &__cards {
+            overflow-x: scroll;
+            display: flex;
+            padding: 50px 60px;
+            &-container {
+                width: 296px;
+            }
+            &-item {
+                background: #F6F6FA;
+                max-width: 396px;
+                padding: 34.5px 60px 34.5px 40px;
+                margin-left: 26px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            &-desc {
+                font-size: 14px;
+                line-height: 140%;
+                color: #808080;
+                max-width: 219px;
+            }
+            &-title {
+                font-size: 32px;
+                line-height: 32px;
+                margin: 10px 0;
+                width: 100%;
+            }
+        }
+    }
+}
