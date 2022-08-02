@@ -43,6 +43,26 @@ li {
   width: 100%;
 }
 
+.input {
+  border: none;
+  border-bottom: 2px solid #000;
+  background: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  opacity: 0.5;
+}
+.input:focus {
+  outline: none;
+}
+.input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
 .button {
   font-family: "e-Ukraine";
   font-weight: 400;
@@ -651,24 +671,111 @@ footer .nav__group-vector {
   grid-column-start: 1;
   grid-column-end: 4;
 }
-.feedback__form .grid__container-input {
+.housing__container {
+  padding: 100px 0 0 0;
+}
+.housing-title {
+  font-size: 56px;
+  line-height: 110%;
+  padding-left: 100px;
+}
+.housing-title img {
+  margin-right: 35px;
+}
+.housing__form {
+  background: #F6F6FA;
+  padding: 41px 60px 81px 100px;
+  max-width: 327px;
+  width: 100%;
+  margin-top: 80px;
+}
+.housing__form-title {
+  font-size: 28px;
+  line-height: 32px;
+}
+.housing__form-input {
+  margin-top: 7px;
+  max-width: 323px;
+  width: 100%;
+}
+.housing__form-select {
+  max-width: 327px;
+  width: 100%;
+  margin-top: 64px;
   border: none;
   border-bottom: 2px solid #000;
-  background: none;
+  padding: 0 0 5px 0;
+  opacity: 0.5;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.02em;
-  opacity: 0.5;
+  color: #000000;
 }
-.feedback__form .grid__container-input:focus {
+.housing__form-select:focus {
   outline: none;
 }
-.feedback__form .grid__container-input::placeholder {
+.housing__form__choice {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.housing__form__choice-title {
+  margin-left: 16px;
   font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.housing__form__choice-title:first-child {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.housing__form__choice-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+.housing__form__radio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.housing__form__radio-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+.housing__form__radio-title {
+  margin-left: 16px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.housing__form__radio-title:first-child {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.housing__form-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.02em;
+  margin-top: 35px;
+}
+.housing__form-button:hover svg path {
+  fill: black;
+}
+.housing__form-button svg {
+  margin-left: 10px;
+}
+.housing__form-button svg path {
+  transition: 0.3s linear;
 }
 
 /*# sourceMappingURL=style.css.map */
