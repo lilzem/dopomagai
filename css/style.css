@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(//db.onlinewebfonts.com/c/a44207bfe4040f536c824dbbf82f5ed1?family=e-Ukraine);
 @font-face {
   font-family: "e-Ukraine";
@@ -672,12 +673,15 @@ footer .nav__group-vector {
   grid-column-end: 4;
 }
 .housing__container {
-  padding: 100px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px 0 0;
 }
 .housing-title {
   font-size: 56px;
   line-height: 110%;
   padding-left: 100px;
+  margin-top: 100px;
 }
 .housing-title img {
   margin-right: 35px;
@@ -686,6 +690,7 @@ footer .nav__group-vector {
   background: #F6F6FA;
   padding: 41px 60px 81px 100px;
   max-width: 327px;
+  max-height: 1081px;
   width: 100%;
   margin-top: 80px;
 }
@@ -776,6 +781,143 @@ footer .nav__group-vector {
 }
 .housing__form-button svg path {
   transition: 0.3s linear;
+}
+.housing__propositions {
+  max-width: 760px;
+  width: 100%;
+  margin: 132px 0 170px 0;
+  padding: 0 31.5px;
+  position: relative;
+}
+.housing__propositions-button {
+  margin-top: 72px;
+  margin: 72px 297px 0 297px;
+}
+.housing__propositions::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #000;
+  width: 823px;
+  bottom: 83px;
+  right: 0;
+}
+.housing__propositions-text {
+  display: flex;
+  justify-content: space-between;
+}
+.housing__propositions-title {
+  font-size: 28px;
+  line-height: 32px;
+}
+.housing__propositions-desc {
+  font-size: 13px;
+  line-height: 16px;
+  opacity: 0.5;
+  display: flex;
+  align-items: flex-end;
+}
+.housing__propositions .proposition {
+  margin-top: 59px;
+  position: relative;
+}
+.housing__propositions .proposition::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #000;
+  position: absolute;
+  top: -22px;
+}
+.housing__propositions .proposition-title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.5;
+  position: relative;
+  max-width: 86px;
+}
+.housing__propositions .proposition-title::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, #C3AAB2 0%, #99EECC 57.66%, #80C0C8 76.7%, #4B8BFA 100%);
+  bottom: -5px;
+}
+.housing__propositions .proposition-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  position: relative;
+}
+.housing__propositions .proposition-group:nth-child(3) {
+  margin-top: 5px;
+}
+.housing__propositions .proposition-city {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+.housing__propositions .proposition-address {
+  font-size: 13px;
+  line-height: 16px;
+  color: #808080;
+  display: flex;
+  align-items: center;
+}
+.housing__propositions .proposition-places {
+  font-size: 13px;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+.housing__propositions .proposition-quantity {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  position: absolute;
+  top: -10px;
+  right: 90px;
+}
+.housing__propositions .proposition-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 760px;
+  margin-top: 62px;
+  position: relative;
+}
+.housing__propositions .proposition-text::before {
+  content: "Будь кого";
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  background: #FFD600;
+  position: absolute;
+  top: -36px;
+  padding: 1px 4px;
+}
+.housing__propositions .proposition-text::after {
+  content: "На період війни";
+  padding: 1px 4px;
+  background: #19BE6F;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  top: -36px;
+  left: 90px;
+}
+.housing__propositions .proposition-complaint {
+  display: flex;
+  align-items: center;
+}
+.housing__propositions .proposition-complaint img {
+  margin-left: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
